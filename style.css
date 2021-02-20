@@ -1,0 +1,470 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/* ここから */
+
+/* p {
+  font-size: 14px;
+} */
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: black;
+  color: white;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;  
+}
+
+
+.logo p {
+  padding-left: 30px;
+  font-weight: bold;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header li {
+  padding-right: 30px;
+}
+
+.header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.eyecatch {
+  background-image: url(img/eyecatch.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  position: relative;
+}
+
+.eyecatch h1 {
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+
+
+.news {
+  display: flex;
+  width: 50%;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 10;
+}
+
+.news-left {
+  width: 80%;
+  background-color: white;
+}
+
+.news-title {
+  padding: 5px 0 0 10px;
+}
+
+.news-right {
+  width: 20%;
+  background-color: black;
+  color: white;
+}
+
+.news-right p {
+  line-height: 50px;
+  text-align: center;
+}
+
+
+.mission-wrapper {
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+.message {
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+  padding: 200px 0 200px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.message h2 {
+  font-size: 25px;
+}
+
+.message p {
+  width: 85%;
+  padding-top: 30px;
+  line-height: 1.5em;
+  z-index: 2;
+
+}
+
+.message a {
+  display: inline-block;
+  margin-top: 30px;
+  color: black;
+  background-color: white;
+  padding: 10px 15px;
+}
+
+.mission-wrapper img {
+  width: 40%;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  z-index: 1;
+}
+
+
+.blank {
+  height: 150px;
+}
+
+
+.service-wrapper {
+  background-color: lightgray;
+}
+
+.service-wrapper h2 {
+  font-size: 25px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.contents {
+  margin-top: 20px;
+  padding-bottom: 350px;
+  position: relative;
+}
+
+.content-wrap {
+  position:relative;
+  z-index: 2;
+  width: 60%;
+}
+
+.content-wrap1 {
+  margin: 0 auto;
+  padding-top: 130px;
+}
+
+.content {
+  background-color: white;
+  width: 50%;
+  padding: 100px 70px;
+}
+
+.content p:first-of-type{
+  font-weight: bold;
+}
+
+.content p:nth-child(n+2){
+  padding-top: 20px;
+}
+
+.content p:nth-child(3) {
+  line-height: 1.5em;
+}
+
+.service-link {
+  text-align: right;
+}
+
+.content a {
+  display: inline-block;
+  border: 1px solid black;
+  color:black;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-align: right;
+}
+
+.content-img {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.content-img img {
+  width: 100%;
+}
+
+.content-img2 {
+  width: 50%;
+}
+
+.content-img2 img {
+  width: 100%;
+}
+
+.contents2 {
+  margin-top: 0;
+}
+
+.contents2 {
+  position: relative;
+}
+
+.content-wrap2 {
+  position: absolute;
+  top: 130px;
+  right: 0;
+}
+
+
+.info-wrapper {
+  padding-top: 200px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-content {
+  background-size: cover;
+  background-position: center;
+  width: 48%;
+  height: 300px;
+  color: white;
+  position: relative;
+}
+
+.company {
+  background-image: url(img/company.jpeg);
+}
+
+.recruit {
+  background-image: url(img/recruit.jpg); 
+}
+
+.info-p {
+  position: absolute;
+  top: 50%; 
+  left: 50%;  
+  transform: translateY(-50%) translateX(-50%);
+  text-align: center; 
+}
+
+.info-p h2 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.info-p a {
+  color: inherit;
+}
+
+.faq {
+  background-color: black;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.text-left {
+  width: 45%;
+}
+
+.text-right {
+  width: 55%;
+}
+
+.text-right a {
+  color: white;
+}
+
+.text-left p {
+  padding-left: 30px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.contact-wrapper {
+  background-image: url(img/contact-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  color: white;
+  text-align: center;
+}
+
+.contact-title h2 {
+  font-size: 25px;
+  padding-top: 150px;
+  padding-bottom: 10px;
+}
+
+.contact-title p {
+  font-weight: bold;
+}
+
+.contact-message p:first-of-type {
+  font-size: 30px;
+  padding: 30px 0 30px 0;
+}
+
+
+.contact-wrapper a {
+  display: inline-block;
+  color: inherit;
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin-top: 30px;
+}
+
+.footer {
+  height: 100px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
