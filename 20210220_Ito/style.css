@@ -105,9 +105,6 @@ input, select {
 
 /* ここから */
 
-/* p {
-  font-size: 14px;
-} */
 a {
   text-decoration: none;
 }
@@ -175,6 +172,7 @@ a {
 .news-left {
   width: 80%;
   background-color: white;
+  padding: 5px 0 0 10px;
 }
 
 .news-title {
@@ -210,14 +208,16 @@ a {
 
 .message h2 {
   font-size: 25px;
+  position: relative;
+  z-index: inherit;
 }
 
 .message p {
   width: 85%;
   padding-top: 30px;
   line-height: 1.5em;
-  z-index: 2;
-
+  position: relative;
+  z-index: inherit;
 }
 
 .message a {
@@ -226,13 +226,15 @@ a {
   color: black;
   background-color: white;
   padding: 10px 15px;
+  position: relative;
+  z-index: inherit;
 }
 
 .mission-wrapper img {
   width: 40%;
   position: absolute;
-  top: 25%;
-  right: 5%;
+  top: 30%;
+  right: 10%;
   z-index: 1;
 }
 
@@ -244,6 +246,7 @@ a {
 
 .service-wrapper {
   background-color: lightgray;
+  padding-bottom: 300px;
 }
 
 .service-wrapper h2 {
@@ -252,27 +255,38 @@ a {
   text-align: center;
 }
 
-.contents {
+
+.contents1 {
   margin-top: 20px;
-  padding-bottom: 350px;
+  margin-bottom: 350px;
   position: relative;
 }
 
+.content-img{
+  text-align: right;
+}
+
+.content-img img {
+  width: 50%;
+}
+
 .content-wrap {
-  position:relative;
-  z-index: 2;
-  width: 60%;
+  background-color: white;
+  width: 50%;
+  height: 60%;
+  display: table;
 }
 
 .content-wrap1 {
-  margin: 0 auto;
-  padding-top: 130px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
 }
 
 .content {
-  background-color: white;
-  width: 50%;
-  padding: 100px 70px;
+  padding: 0 10%;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .content p:first-of-type{
@@ -297,41 +311,21 @@ a {
   color:black;
   margin-top: 20px;
   padding: 10px 20px;
-  text-align: right;
-}
-
-.content-img {
-  width: 50%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
-
-.content-img img {
-  width: 100%;
-}
-
-.content-img2 {
-  width: 50%;
 }
 
 .content-img2 img {
-  width: 100%;
+  width: 50%;
 }
 
 .contents2 {
   margin-top: 0;
-}
-
-.contents2 {
   position: relative;
 }
 
 .content-wrap2 {
   position: absolute;
-  top: 130px;
-  right: 0;
+  top: 32%;
+  left: 40%;
 }
 
 
@@ -370,7 +364,7 @@ a {
 }
 
 .info-p h2 {
-  font-size: 25px;
+  font-size: 36px;
   padding-bottom: 10px;
 }
 
