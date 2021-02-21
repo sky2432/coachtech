@@ -109,6 +109,7 @@ a {
   text-decoration: none;
 }
 
+/* header */
 .header {
   background-color: black;
   color: white;
@@ -120,7 +121,6 @@ a {
   align-items: center;
   height: 70px;  
 }
-
 
 .logo p {
   padding-left: 30px;
@@ -139,8 +139,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+/* header-end */
 
 
+/* eyecatch */
 .eyecatch {
   background-image: url(img/eyecatch.jpg);
   background-size: cover;
@@ -158,21 +160,20 @@ a {
   left: 10%;
 }
 
-
 .news {
   display: flex;
   width: 50%;
-  height: 50px;
   position: absolute;
   bottom: 0px;
   right: 0px;
   z-index: 10;
+  
 }
 
 .news-left {
   width: 80%;
   background-color: white;
-  padding: 5px 0 0 10px;
+  padding: 5px 0 15px 10px;
 }
 
 .news-title {
@@ -183,27 +184,36 @@ a {
   width: 20%;
   background-color: black;
   color: white;
+  position: relative;
 }
 
 .news-right p {
-  line-height: 50px;
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
 }
+/* eyecatch */
 
-
+/* mission */
 .mission-wrapper {
   background-color: black;
   color: white;
+  height: 600px;
+}
+
+.mission-wrap {
+  padding-top: 170px;
+  text-align:right;
   position: relative;
 }
 
 .message {
   text-align: left;
-  width: 60%;
-  margin: 0 auto;
-  padding: 200px 0 200px 0;
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  top: 35%;
+  left: 15%;
 }
 
 .message h2 {
@@ -213,11 +223,9 @@ a {
 }
 
 .message p {
-  width: 85%;
+  width: 70%;
   padding-top: 30px;
   line-height: 1.5em;
-  position: relative;
-  z-index: inherit;
 }
 
 .message a {
@@ -226,24 +234,37 @@ a {
   color: black;
   background-color: white;
   padding: 10px 15px;
-  position: relative;
-  z-index: inherit;
 }
 
-.mission-wrapper img {
-  width: 40%;
-  position: absolute;
-  top: 30%;
-  right: 10%;
-  z-index: 1;
+.mission-wrap img {
+  width: 700px;
+  padding-right: 10%;
 }
 
+@media screen and (max-width:1400px){
+  .message h2 {
+    font-size: 20px;
+  }
+  .message p {
+    font-size: 12px;
+  }
+  .mission-wrapper {
+    height: 500px;
+  }
+  .mission-wrap img {
+    width: 550px;
+    padding-right: 5%;
+  }
+
+
+}
+/* mission-end */
 
 .blank {
   height: 150px;
 }
 
-
+/* service */
 .service-wrapper {
   background-color: lightgray;
   padding-bottom: 300px;
@@ -272,19 +293,19 @@ a {
 
 .content-wrap {
   background-color: white;
-  width: 50%;
-  height: 60%;
+  width: 45%;
+  height: 65%;
   display: table;
 }
 
 .content-wrap1 {
   position: absolute;
   top: 20%;
-  left: 10%;
+  left: 15%;
 }
 
 .content {
-  padding: 0 10%;
+  padding: 0 18%;
   display: table-cell;
   vertical-align: middle;
 }
@@ -309,7 +330,7 @@ a {
   display: inline-block;
   border: 1px solid black;
   color:black;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 10px 20px;
 }
 
@@ -324,11 +345,18 @@ a {
 
 .content-wrap2 {
   position: absolute;
-  top: 32%;
+  top: 30%;
   left: 40%;
 }
 
+@media screen and (max-width: 1400px){
+  .content p, .content a {
+    font-size: 10px;
+  }
+}
+/* service-end */
 
+/* info */
 .info-wrapper {
   padding-top: 200px;
 }
@@ -401,7 +429,9 @@ a {
   font-weight: bold;
   font-size: 25px;
 }
+/* info-end */
 
+/* contact */
 .contact-wrapper {
   background-image: url(img/contact-bg.jpg);
   background-size: cover;
@@ -426,7 +456,6 @@ a {
   padding: 30px 0 30px 0;
 }
 
-
 .contact-wrapper a {
   display: inline-block;
   color: inherit;
@@ -434,7 +463,9 @@ a {
   padding: 10px 15px;
   margin-top: 30px;
 }
+/* contact-end */
 
+/* footer */
 .footer {
   height: 100px;
 }
@@ -442,7 +473,7 @@ a {
 .copyright {
   text-align: center;
 }
-
+/* footer-end */
 
 
 
