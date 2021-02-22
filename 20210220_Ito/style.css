@@ -197,14 +197,18 @@ a {
 /* eyecatch */
 
 /* mission */
+html, body {
+  height: 100%;
+}
+
 .mission-wrapper {
-  background-color: black;
   color: white;
-  height: 600px;
+  background-color: black;
+  height: 33vw;
 }
 
 .mission-wrap {
-  padding-top: 170px;
+  padding-top: 10vw;
   text-align:right;
   position: relative;
 }
@@ -217,69 +221,53 @@ a {
 }
 
 .message h2 {
-  font-size: 25px;
+  font-size: 1.5vw;
   position: relative;
   z-index: inherit;
+
 }
 
 .message p {
+  font-size: 0.8vw;
   width: 70%;
-  padding-top: 30px;
-  line-height: 1.5em;
+  padding-top: 1.6vw;
+  line-height: 1.5vw;
 }
 
 .message a {
+  font-size: 0.8vw;
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 1.6vw;
   color: black;
   background-color: white;
   padding: 10px 15px;
 }
 
 .mission-wrap img {
-  width: 700px;
+  width: 40vw;
   padding-right: 10%;
-}
-
-@media screen and (max-width:1400px){
-  .message h2 {
-    font-size: 20px;
-  }
-  .message p {
-    font-size: 12px;
-  }
-  .mission-wrapper {
-    height: 500px;
-  }
-  .mission-wrap img {
-    width: 550px;
-    padding-right: 5%;
-  }
-
-
 }
 /* mission-end */
 
 .blank {
-  height: 150px;
+  height: 14vw;
 }
 
 /* service */
 .service-wrapper {
   background-color: lightgray;
-  padding-bottom: 300px;
+  padding-bottom: 15vw;
 }
 
 .service-wrapper h2 {
-  font-size: 25px;
-  padding-top: 10px;
+  font-size: 1.5vw;
+  padding-top: 1vw;
   text-align: center;
 }
 
-
 .contents1 {
-  margin-top: 20px;
-  margin-bottom: 350px;
+  margin-top: 1vw;
+  margin-bottom: 15vw;
   position: relative;
 }
 
@@ -305,9 +293,13 @@ a {
 }
 
 .content {
-  padding: 0 18%;
+  padding: 0 8vw;
   display: table-cell;
   vertical-align: middle;
+}
+
+.content p, .content a {
+  font-size: 0.8vw;
 }
 
 .content p:first-of-type{
@@ -315,11 +307,11 @@ a {
 }
 
 .content p:nth-child(n+2){
-  padding-top: 20px;
+  padding-top: 1.5vw;
 }
 
 .content p:nth-child(3) {
-  line-height: 1.5em;
+  line-height: 1.2vw;
 }
 
 .service-link {
@@ -330,8 +322,8 @@ a {
   display: inline-block;
   border: 1px solid black;
   color:black;
-  margin-top: 10px;
-  padding: 10px 20px;
+  margin-top: 1vw;
+  padding: 0.7vw 1.5vw;
 }
 
 .content-img2 img {
@@ -347,12 +339,6 @@ a {
   position: absolute;
   top: 30%;
   left: 40%;
-}
-
-@media screen and (max-width: 1400px){
-  .content p, .content a {
-    font-size: 10px;
-  }
 }
 /* service-end */
 
